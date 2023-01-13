@@ -1,21 +1,28 @@
 @media (color) {
-  ::selection { background: #111; color: #ec0 }
+  ::selection { background: #111; color: floralwhite }
   .flora :not(.nativa) { color: inherit }
-  .sol.sol { background: gold; color: #111 }
-  .luna.luna { background: ivory; color: #111 }
+  .sol.sol { background: ivory; color: #111 }
+  .luna.luna { background: floralwhite; color: #111 }
   .jugo.jugo { background: orchid; color: #111 }
   .meca.meca { background: silver; color: #111 }
   .esha.esha { background: hotpink; color: #111 }
+  .shae.shae { background: darkviolet; color: floralwhite }
+  .shea.shea { background: dodgerblue; color: #111 }
 }
 
 :link {
   text-decoration-style: double;
   box-shadow: 0 1ex 1em 0 violet;
   border-radius: 0;
+  text-shadow:
+    30vw -20vh 1ex deeppink,
+    20vw 20vh 1ch deeppink,
+    30vw 30vh 1ch deeppink,
+    50vw 50vh 1em deeppink;
 }
 
 :focus {
-  box-shadow: 0 0 0 .2em #090909;
+  box-shadow: 0 0 0 .2em ivory;
   outline-style: dashed;
   outline-width: .2em;
 }
@@ -23,7 +30,7 @@
 .mundo {
   font-family: system-ui, sans-serif;
   font-size: calc(1em + 1vw + 1vh);
-  line-height: 1.5;
+  line-height: 1.618;
 }
 
 .cuerpo {
@@ -56,12 +63,16 @@
   flex-basis: 100%;
 }
 
-.quote {
+.qween {
   box-sizing: border-box;
   padding: 1rem;
-  border-left: .25rem dashed;
+  border-left: .236em dotted;
   display: block;
   min-height: 100vh;
+}
+
+.qween:focus-within {
+  border-left-style: dashed;
 }
 
 .espejo  {
