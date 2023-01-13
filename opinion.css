@@ -1,10 +1,11 @@
 @media (color) {
-  ::selection { background: #010101; color: orangered }
+  ::selection { background: #111; color: #ec0 }
   .flora :not(.nativa) { color: inherit }
-  .sol.sol { background: gold; color: #090909 }
-  .luna.luna { background: #090909; color: hotpink }
-  .jugo.jugo { background: hotpink; color: #090909 }
-  .metal.metal { background: silver; color: #090909 }
+  .sol.sol { background: gold; color: #111 }
+  .luna.luna { background: ivory; color: #111 }
+  .jugo.jugo { background: orchid; color: #111 }
+  .meca.meca { background: silver; color: #111 }
+  .esha.esha { background: hotpink; color: #111 }
 }
 
 :link {
@@ -27,9 +28,9 @@
 
 .cuerpo {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  overflow-wrap: break-word;
+  margin: auto;
+  padding: 10vmin;
+  overflow-wrap: anywhere;
 }
 
 .capo {
